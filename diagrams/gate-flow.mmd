@@ -1,0 +1,14 @@
+flowchart TD
+    F0[F0 Requirements Baseline] --> F1[F1 Research]
+    F1 --> F2[F2 Research Consolidation\nindependently audited]
+    F2 --> F3[F3 Candidate Architectures\nmultiple, materially distinct]
+    F3 --> F4{F4 Adversarial Audit\ntry to break each candidate}
+    F4 -->|survives w/ mitigation| F5[F5 Falsification Proof of Concept\none candidate preferred]
+    F4 -.->|disqualifying failure| F3
+    F5 -->|no unmitigable failure| F6[F6 Acceptance Testing\nresidual risk to executed criteria]
+    F5 -.->|candidate invalidated| F3
+    F6 -->|all criteria pass +\nresiduals closed +\nindependent exit review| F7[F7 Production Implementation]
+    F6 -.->|criterion fails| F6
+
+    classDef gate fill:#eef,stroke:#446,stroke-width:1px;
+    class F0,F1,F2,F3,F4,F5,F6,F7 gate;
