@@ -1,5 +1,7 @@
 # Knowledge vNext — Gated Architecture Design Showcase
 
+**Project Status:** Completed sanitized methodology showcase (documentation and Mermaid diagrams only; the evaluated experimental backend was formally closed and archived in September 2026 with no production deployment).
+
 Knowledge vNext is a sanitized public portfolio repository documenting a
 gated, independently-audited process for selecting and acceptance-testing a
 persistent knowledge architecture for AI agents, before any production
@@ -121,12 +123,18 @@ matrix, and coordinating independent adjudication at every gate transition.
 - A 25-criterion acceptance-test baseline was independently audited and
   accepted before any test execution began, closing the gap between
   "we wrote a plan" and "the plan passed review."
-- Acceptance-test execution is in progress under independent adjudication;
-  general production implementation remains unauthorized until every
-  criterion and every residual risk is explicitly closed.
+- Following staged acceptance-test evaluation under independent adjudication,
+  the experimental backend candidate was formally closed and archived without
+  production deployment, while its validated evidence-integrity gates informed
+  subsequent repository governance.
 
 No production deployment, data migration, or business-outcome claim is made
 by this repository.
+
+## Limitations
+
+- **Documentation-only methodology showcase:** This repository contains sanitized governance specifications and Mermaid diagrams only; it does not include executable application code, private test harnesses, or raw evidence bundles.
+- **Archived underlying experiment:** The experimental backend evaluated through this nine-gate methodology is closed and archived; this repository exists strictly to document the adversarial architecture-review and acceptance-testing methodology.
 
 ## Documentation Index
 
